@@ -1,0 +1,13 @@
+server:
+  port: 8888
+ 
+spring:
+  application:    
+    name: properties
+  cloud:    
+    config:      
+      server:
+        git:
+          uri: https://github.com/NotPelos/servidoryml
+          default-label: main
+          search-paths: '*service'
